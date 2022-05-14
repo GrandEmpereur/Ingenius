@@ -30,6 +30,7 @@ function formulaire_demande_entrante($params){
         'consent',
         'source'
     );
+    
     $champs_actifs=array();
     $contentform = '';
     $lang = "fr";
