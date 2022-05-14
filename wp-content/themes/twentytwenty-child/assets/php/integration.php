@@ -1,4 +1,5 @@
 <?php
+
 function formulaire_demande_entrante($params){
     //Gerer l'ordre d'affichage des champs
     $champs=array(
@@ -30,6 +31,7 @@ function formulaire_demande_entrante($params){
         'consent',
         'source'
     );
+    
     $champs_actifs=array();
     $contentform = '';
     $lang = "fr";

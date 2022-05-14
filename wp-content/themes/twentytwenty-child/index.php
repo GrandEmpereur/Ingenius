@@ -28,7 +28,7 @@ get_header();
 		</div>
 
 		<div class="hero__form">
-			<form action="">
+			<form action="./functions.php" method="POST">
 				<h2>Ask for program brochure</h2>
 
 				<div class="form__input">

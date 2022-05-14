@@ -24,4 +24,3 @@ function styleandscript() {
 
 }
 add_action('wp_enqueue_scripts', 'styleandscript');
-

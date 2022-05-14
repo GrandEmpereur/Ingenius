@@ -310,6 +310,8 @@ p{
     padding: 0;
     margin: 0;
     width: 80%;
+    outline: transparent;
+
 }
 
 .form__input--checkbox {
