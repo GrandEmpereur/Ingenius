@@ -293,6 +293,7 @@ p{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    gap: 10px;
 }
 
 .form__input label{
@@ -300,6 +301,10 @@ p{
     font-size: var(--font-family);
     font-weight: var(--weight-bold);
     font-size: 16px;
+}
+
+.form__input label span {
+    color: var(--bg-red)
 }
 
 .form__input .input_text{
@@ -313,6 +318,17 @@ p{
     outline: transparent;
 
 }
+
+.form__input .input__select{
+    appearance: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #384B5A;
+    outline: transparent;
+    width: 80%;
+}
+
+
 
 .form__input--checkbox {
     display: flex;

@@ -15,7 +15,10 @@
  */
 
 get_header();
+
+
 ?>
+
 
 <main>
 	<div class="hero">
@@ -33,23 +36,40 @@ get_header();
 
 				<div class="form__input">
 					<label for="">Title (Mr. Ms.)</label>
-					<input class="input_text" type="text" name="firstname" id="">
+					<?php
+						get_civility();
+					?>
 				</div>
 
 				<div class="form__input">
-					<label for="">First Name</label>
-					<input class="input_text" type="text" name="firstname" id="">
+					<label for="">First Name<span>*</span></label>
+					<input class="input_text" type="text" name="firstname" id=""require>
 				</div>
 
 				<div class="form__input">
-					<label for="">Last Name</label>
-					<input class="input_text" type="text" name="lastname" id="">
+					<label for="">Last Name<span>*</span></label>
+					<input class="input_text" type="text" name="lastname" id="" require>
 				</div>
 
-				<div class="form__input--checkbox">
-					<input  class="input_checkbox" type="checkbox" name="" id="">
-					<label for="">I consent to the processing of my personal data and certify that I am over 15 years of age or, failing that, have the authorization of the holder of parental authority *</label>
+				<div class="form__input">
+					<label for="">Country<span>*</span></label>
+					<?php
+						get_contry();
+					?>
 				</div>
+
+				<div class="form__input">
+					<label for="">Desired program<span>*</span></label>
+					<?php
+						get_desiredProgram();
+					?>
+				</div>
+
+				<div class="form__input">
+					<label for="">mobile</label>
+					<input class="input_text" type="text" name="mobile" id="" require>
+				</div>
+				
 
 				<div class="form__input--submit">
 					<input class="input__submit" type="submit" value="Envoyer">

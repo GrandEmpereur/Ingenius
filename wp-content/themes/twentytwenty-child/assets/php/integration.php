@@ -1,5 +1,4 @@
 <?php
-
 function formulaire_demande_entrante($params){
     //Gerer l'ordre d'affichage des champs
     $champs=array(
