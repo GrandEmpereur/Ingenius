@@ -69,6 +69,16 @@ function get_desiredProgram(){
 	echo '</select>';
 }
 
+function get__agreTermes(){
+	$url = 'https://www.monaco.edu/inseecu/fr/api/form/demande-documentation';
+	$result = file_get_contents($url);
+	$result = json_decode($result, true);
+
+	$fieldsAgreTermes = $result['fields'][0];
+	echo '<input type="checkbox" name="agreTermes" id="agreTermes" require>';	
+	echo '<label for="agreTermes">'.$fieldsAgreTermes['label'].'</label>';
+}
+
 
 
 

@@ -31,7 +31,7 @@ get_header();
 		</div>
 
 		<div class="hero__form">
-			<form action="./functions.php" method="POST">
+			<form action="" method="POST">
 				<h2>Ask for program brochure</h2>
 
 				<div class="form__input">
@@ -69,7 +69,12 @@ get_header();
 					<label for="">mobile</label>
 					<input class="input_text" type="text" name="mobile" id="" require>
 				</div>
-				
+
+				<div class="form__input--checkbox ">
+					<?php
+						get__agreTermes();
+					?>
+				</div>
 
 				<div class="form__input--submit">
 					<input class="input__submit" type="submit" value="Envoyer">
