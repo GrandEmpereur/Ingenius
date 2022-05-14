@@ -1,0 +1,342 @@
+/*
+ Theme Name:   Ingenius Theme
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Intergration d'un theme Wordpress
+ Author:       Grand Empereur [Bartosik Patrick]
+ Author URI:   https://github.com/GrandEmpereur
+ Template:     twentytwenty
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentytwenty
+*/
+
+/* -------------------------------------------------------------------------- */
+/*                                    Font                                    */
+/* -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* -------------------------------------------------------------------------- */
+/*                                  Reste css                                 */
+/* -------------------------------------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,li,ol{
+    list-style: none;
+}
+
+body{
+    background: #f5f5f5;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+p{
+    line-height: normal;
+    margin: 0;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Rooter                                   */
+/* -------------------------------------------------------------------------- */
+
+:root{
+
+    /* Header Btn bg */
+    --bg-red: #DB322B;
+    --bg-gray: #384B5A;
+    --bg-blue: #9DB5C7;
+
+    /* Text Color */
+    --mainText-color: #fff;
+    --text-blue: #384B5A;
+
+    /* Border color */
+    --border-color: #384B5A;
+
+    /* Background Color */
+    --bg-primary: #F8F8F8;
+
+    /* Font Family */
+    --font-family: 'Open Sans';
+    --font-family-secondary: 'PT Sans', sans-serif;
+
+    /* Font weight */
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semi-bold: 600;
+    --weight-bold: 700;
+    --weight-extra-bold: 800;
+    
+
+    
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Main                                    */
+/* -------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------- header --------------------------------- */
+
+.herder__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    background-color: var(--bg-primary);
+}
+
+.herder__content .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.herder__content .logo img{
+    width: 30%;
+    height: 30%;
+}
+
+.herder__content .nav__items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.herder__content .nav__items .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.herder__content .nav__items .menu .event{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-red);
+    padding: 10px 30px;
+    border-radius: 5px ;
+}
+
+.herder__content .nav__items .menu .download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-gray);
+    padding: 10px 30px;
+    border-radius: 5px ;
+}
+
+.herder__content .nav__items .menu .apply{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-blue);
+    padding: 10px 30px;
+    border-radius: 5px ;
+}
+
+.herder__content .nav__items .menu a{
+    color: var(--mainText-color);
+    font-family: var(--font-family-secondary);
+    font-weight: var(--weight-regular);
+    font-size: 1.5rem;
+}
+
+.herder__content .nav__items .langue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.herder__content .nav__items .langue li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    padding: 5px 10px;
+
+}
+
+.herder__content .nav__items .langue a{
+    color: var(--text-blue);
+    font-family: var(--font-family-secondary);
+    font-weight: var(--weight-regular);
+    font-size: 1rem;
+}
+
+
+/* ------------------------------ hero section ------------------------------ */
+
+.hero{
+    background-image: url(../images/heros/IUM_HERO\ Frame.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 200px;
+    top: 373px;
+    background-color: #fff;
+    width: 550px;
+}
+
+.hero__content .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.hero__content .text h1{
+    font-size: 3.5rem;
+    color: var(--text-blue);
+    font-family: var(--font-family);
+    font-weight: var(--weight-bold);
+    width: 80%;
+
+}
+
+.hero__content .text p{
+    font-size: 1.5rem;
+    font-family: var(--font-family-secondary);
+    font-weight: var(--weight-light);
+    width: 80%;
+}
+
+.hero__content .deco{
+    background-color: var(--bg-red);
+    width: 14px;
+    height: 350px;
+}
+
+/* ------------------------------ hero form section ------------------------------ */
+
+.hero__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+
+    width: 350px;
+    height: 600px;
+
+    position: absolute;
+    top: 35px;
+    left: 920px;
+}
+
+.hero__form form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__form form h2{
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--text-blue);
+}
+
+.hero__form form p{
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: var(--weight-light);
+}
+
+.hero__form form a{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text-blue);
+    text-decoration: 1px solid var(--text-blue);
+    font-family: var(--font-family-secondary);
+    font-weight: var(--weight-regular);
+}
+
+.form__input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form__input label{
+    color: #384B5A;
+    font-size: var(--font-family);
+    font-weight: var(--weight-bold);
+    font-size: 16px;
+}
+
+.form__input .input_text{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #384B5A;
+    color: #384B5A;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+}
+
+.form__input--checkbox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form__input--checkbox label{
+    color: #384B5A;
+    font-size: var(--font-family);
+    font-size: 1.28rem;
+}
+
+.form__input--submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__input--submit .input__submit{
+    background-color: var(--bg-gray);
+    width: 300px;
+}
+
+
+
+
+
+
